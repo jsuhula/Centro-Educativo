@@ -28,6 +28,7 @@ public class Inicio extends javax.swing.JFrame {
 
         jLabel4 = new javax.swing.JLabel();
         panelBtns = new javax.swing.JPanel();
+        jPanelButtons = new javax.swing.JPanel();
         establecimientoBtn = new javax.swing.JButton();
         especialidadesBtn = new javax.swing.JButton();
         cursosBtn = new javax.swing.JButton();
@@ -41,33 +42,33 @@ public class Inicio extends javax.swing.JFrame {
         jLabel4.setText("CONTROL ESPECIALIDADES");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -4, 620, 70));
 
+        jPanelButtons.setLayout(new javax.swing.BoxLayout(jPanelButtons, javax.swing.BoxLayout.LINE_AXIS));
+
         establecimientoBtn.setBackground(new java.awt.Color(197, 197, 197));
         establecimientoBtn.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        establecimientoBtn.setForeground(new java.awt.Color(0, 0, 0));
         establecimientoBtn.setText("ESTABLECIMIENTOS");
         establecimientoBtn.setFocusPainted(false);
-        panelBtns.add(establecimientoBtn);
+        jPanelButtons.add(establecimientoBtn);
 
         especialidadesBtn.setBackground(new java.awt.Color(197, 197, 197));
         especialidadesBtn.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        especialidadesBtn.setForeground(new java.awt.Color(0, 0, 0));
         especialidadesBtn.setText("ESPECIALIDADES");
         especialidadesBtn.setFocusPainted(false);
-        panelBtns.add(especialidadesBtn);
+        jPanelButtons.add(especialidadesBtn);
 
         cursosBtn.setBackground(new java.awt.Color(197, 197, 197));
         cursosBtn.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        cursosBtn.setForeground(new java.awt.Color(0, 0, 0));
         cursosBtn.setText("CURSOS");
         cursosBtn.setFocusPainted(false);
-        panelBtns.add(cursosBtn);
+        jPanelButtons.add(cursosBtn);
 
         profesoresBtn.setBackground(new java.awt.Color(197, 197, 197));
         profesoresBtn.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        profesoresBtn.setForeground(new java.awt.Color(0, 0, 0));
         profesoresBtn.setText("PROFESORES");
         profesoresBtn.setFocusPainted(false);
-        panelBtns.add(profesoresBtn);
+        jPanelButtons.add(profesoresBtn);
+
+        panelBtns.add(jPanelButtons);
 
         getContentPane().add(panelBtns, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 620, 60));
 
@@ -114,6 +115,7 @@ public class Inicio extends javax.swing.JFrame {
     public javax.swing.JButton especialidadesBtn;
     public javax.swing.JButton establecimientoBtn;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanelButtons;
     private javax.swing.JPanel panelBtns;
     public javax.swing.JButton profesoresBtn;
     // End of variables declaration//GEN-END:variables
